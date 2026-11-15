@@ -1,0 +1,17 @@
+{
+  "name": "stomatologiya-liniya-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Демонстрационный одностраничный сайт стоматологической клиники",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "start": "vite --host 0.0.0.0",
+    "build": "vite build --base=./ && node scripts/copy-static.mjs",
+    "preview": "vite preview --host 0.0.0.0",
+    "test:browser": "node tests/browser.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "vite": "^6.0.0"
+  }
+}
